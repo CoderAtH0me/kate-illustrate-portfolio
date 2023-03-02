@@ -9,7 +9,7 @@
 }
 
 :root {
-  --bg-color: #ccc;
+  /* --bg-color: #ccc; */
   --second-bg-color: #fff;
   --text-color: #202020;
   --second-color: #2a2a2a;
@@ -18,11 +18,14 @@
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
+  --texture: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
 }
 
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+  background-color: #fff;
+  background-image: var(--texture);
+  /* background: var(--bg-color);
+  color: var(--text-color); */
 }
 
 header {
@@ -194,10 +197,13 @@ section {
 }
 
 header.sticky {
-  background: var(--bg-color);
+  background: #fff;
+  background-image: var(--texture);
+
   border-bottom: 1px solid var(--second-color);
   padding: 12px 15%;
 }
+/* HERO SECTION AND NAV DONE */
 
 .about {
   display: grid;
@@ -210,8 +216,6 @@ header.sticky {
   max-width: 530px;
   height: auto;
   width: 100%;
-  /* actually no need prop */
-  border-radius: 8px;
 }
 
 .about-text h2 {
@@ -263,7 +267,9 @@ header.sticky {
 }
 
 .box {
-  background: var(--bg-color);
+  background: #fff;
+  background-image: var(--texture);
+
   padding: 35px 45px;
   border-radius: 8px;
   transition: all 0.45s ease;
@@ -451,7 +457,9 @@ header.sticky {
 form textarea {
   width: 100%;
   padding: 14px;
-  background: var(--bg-color);
+  background: #fff;
+  background-image: var(--texture);
+
   color: var(--text-color);
   border: none;
   outline: none;
@@ -484,7 +492,8 @@ form textarea {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  background: var(--bg-color);
+  background: #fff;
+  background-image: var(--texture);
 }
 .last-text p {
   color: var(--second-color);
@@ -497,6 +506,7 @@ form textarea {
   color: var(--text-color);
   background: var(--main-color);
 }
+/* FOOTER DONE */
 
 @media (max-width: 1480px) {
   header {
@@ -549,6 +559,11 @@ form textarea {
 }
 
 @media (max-width: 840px) {
+  .services-content {
+    grid-template-columns: 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   #menu-icon {
     display: block;
   }
@@ -559,7 +574,9 @@ form textarea {
     left: 0;
     display: flex;
     flex-direction: column;
-    background: var(--bg-color);
+    background: #fff;
+    background-image: var(--texture);
+
     text-align: left;
     transition: all 0.45s ease;
   }
